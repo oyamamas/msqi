@@ -1,4 +1,4 @@
-### MASQUERADE I
+### MSQI (Masquerade I)
 
 Tool to round-robin proxy via SSH tunnels.
 
@@ -9,7 +9,7 @@ as a part of my practice.
 The idea is to create spin up `ssh -D` and redirect each nth packet to 'em with iptables statisctic
 
 ```bash
-sudo SSH_AUTH_SOCK=$SSH_AUTH_SOCK ./main proxy -p 1337 -s ssh1@proxy1 -s ssh@proxy2
+sudo SSH_AUTH_SOCK=$SSH_AUTH_SOCK ./msqi proxy -p 1337 -s ssh1@proxy1 -s ssh@proxy2
 ```
 
 ```bash
@@ -36,5 +36,5 @@ sudo ./msqi proxy <params>
 ### Installation
 
 ```bash
-go install github.com/oyamamas/masqueradeI
+go install github.com/oyamamas/msqi@latest
 ```
