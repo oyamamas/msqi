@@ -11,7 +11,7 @@ import (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:          "masqueradeI",
+	Use:          "msqi",
 	Short:        "Round-robin proxy via SSH tunnels",
 	SilenceUsage: true,
 }
